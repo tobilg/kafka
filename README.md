@@ -6,9 +6,9 @@
 [![bitHound Dev Dependencies][badge-bithound-dev-deps]][bithound-dev-deps]
 [![license][badge-license]][license]
 
-# no-kafka
+# no-kafka-slim
 
-__no-kafka__ is [Apache Kafka](https://kafka.apache.org) 0.9 client for Node.js with [new unified consumer API](#groupconsumer-new-unified-consumer-api) support.
+__no-kafka-slim__ is [Apache Kafka](https://kafka.apache.org) 0.9 client for Node.js with [new unified consumer API](#groupconsumer-new-unified-consumer-api) support. This module is a direct fork of [oleksiyk/kafka](https://github.com/oleksiyk/kafka), but with removed depency for Snappy (due to various problems on Windows).
 
 All methods will return a [promise](https://github.com/petkaantonov/bluebird)
 
