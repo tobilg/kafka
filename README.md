@@ -359,7 +359,7 @@ return admin.init().then(function(){
 
 ## Compression
 
-__no-kafka__ supports both SNAPPY and Gzip compression.
+__no-kafka__ supports Gzip compression.
 
 Enable compression in Producer:
 
@@ -368,7 +368,7 @@ var Kafka = require('no-kafka');
 
 var producer = new Kafka.Producer({
     clientId: 'producer',
-    codec: Kafka.COMPRESSION_SNAPPY // Kafka.COMPRESSION_NONE, Kafka.COMPRESSION_SNAPPY, Kafka.COMPRESSION_GZIP
+    codec: Kafka.COMPRESSION_GZIP // Kafka.COMPRESSION_NONE, Kafka.COMPRESSION_GZIP
 });
 ```
 
@@ -379,7 +379,7 @@ return producer.send({
     topic: 'kafka-test-topic',
     partition: 0,
     message: { value: 'p00' }
-}, { codec: Kafka.COMPRESSION_SNAPPY })
+}, { codec: Kafka.COMPRESSION_GZIP })
 ```
 
 By default __no-kafka__ will use synchronous compression and decompression (synchronous Gzip is not availble in node < 0.11).
@@ -391,7 +391,7 @@ Producer:
 var producer = new Kafka.Producer({
     clientId: 'producer',
     asyncCompression: true,
-    codec: Kafka.COMPRESSION_SNAPPY
+    codec: Kafka.COMPRESSION_GZIP
 });
 ```
 
