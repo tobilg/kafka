@@ -1,12 +1,12 @@
 {
-    "name": "no-kafka",
-    "description": "Apache Kafka 0.9 client for Node.JS",
-    "homepage": "http://github.com/oleksiyk/kafka",
+    "name": "no-kafka-slim",
+    "description": "Apache Kafka 0.9 client for Node.JS without Snappy dependency",
+    "homepage": "http://github.com/tobilg/no-kafka-slim",
     "author": {
         "name": "Oleksiy Krivoshey",
         "email": "oleksiyk@gmail.com"
     },
-    "version": "2.0.4",
+    "version": "0.1.0",
     "main": "./lib/index.js",
     "keywords": ["kafka"],
     "dependencies": {
@@ -28,14 +28,14 @@
         "istanbul": "^0.4.2"
     },
     "bugs": {
-        "url": "https://github.com/oleksiyk/kafka/issues"
+        "url": "https://github.com/tobilg/no-kafka-slim/issues"
     },
     "scripts": {
         "test": "make"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/oleksiyk/kafka.git"
+        "url": "https://github.com/tobilg/no-kafka-slim.git"
     },
     "readmeFilename": "README.md",
     "license": "MIT"
