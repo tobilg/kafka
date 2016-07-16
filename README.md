@@ -1,11 +1,3 @@
-[![Build Status][badge-travis]][travis]
-[![Test Coverage][badge-coverage]][coverage]
-[![bitHound Code][badge-bithound-code]][bithound-code]
-[![bitHound Overall Score][badge-bithound-overall]][bithound-overall]
-[![bitHound Dependencies][badge-bithound-deps]][bithound-deps]
-[![bitHound Dev Dependencies][badge-bithound-dev-deps]][bithound-dev-deps]
-[![license][badge-license]][license]
-
 # no-kafka-slim
 
 __no-kafka-slim__ is [Apache Kafka](https://kafka.apache.org) 0.9 client for Node.js with [new unified consumer API](#groupconsumer-new-unified-consumer-api) support. This module is a direct fork of [oleksiyk/kafka](https://github.com/oleksiyk/kafka), but with removed depency for Snappy (due to various problems on Windows).
@@ -34,10 +26,10 @@ All methods will return a [promise](https://github.com/petkaantonov/bluebird)
 kafka-topics.sh --zookeeper 127.0.0.1:2181 --create --topic kafka-test-topic --partitions 3 --replication-factor 1
 ```
 
-* install __no-kafka__
+* install __no-kafka-slim__
 
 ```shell
-npm install no-kafka
+npm install no-kafka-slim
 ```
 
 
@@ -46,7 +38,7 @@ npm install no-kafka
 Example:
 
 ```javascript
-var Kafka = require('no-kafka');
+var Kafka = require('no-kafka-slim');
 var producer = new Kafka.Producer();
 
 return producer.init().then(function(){
